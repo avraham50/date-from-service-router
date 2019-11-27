@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NameDemoService } from './services/name-demo.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FromSerRouter';
+
+  constructor(public nameD:NameDemoService){
+
+  }
 }
